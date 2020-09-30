@@ -1,0 +1,58 @@
+<html>
+  <body>
+    <div id="background">
+      <div
+        id="character"
+        style='position:absolute; top:100px; left:450px; background-image: url("img/down1.png"); width:59px; height:86px;'
+      ></div>
+    </div>
+    <script type="text/javascript">
+      let leftValue = 450;
+      let topValue = 100;
+      let direction = 'down';
+      let walkValue = 1;
+      function update() {
+        document.getElementById('character').style.left = leftValue + 'px';
+        document.getElementById('character').style.top = topValue + 'px';
+        document.getElementById(
+          'character'
+        ).style.backgroundImage = `url('img/${direction}${walkValue}.png'`;
+        if (walkValue == 1) {
+          walkValue = 2;
+        } else if (walkValue == 2) {
+          walkValue = 1;
+        }
+      }
+
+      regulatePos = () => {
+        if (leftValue < 0) {
+          leftValue = 0;
+        } else if (topValue < 0) {
+          topValue = 0;
+        }
+      };
+
+      document.onkeydown = function(e) {
+        console.log(e);
+        if (e.keyCode == 37) {
+          direction = 'left';
+          leftValue = leftValue - 10;
+          regulatePos();
+        } else if (e.keyCode == 39) {
+          direction = 'right';
+          leftValue = leftValue + 10;
+          regulatePos();
+        } else if (e.keyCode == 40) {
+          direction = 'down';
+          topValue = topValue + 10;
+          regulatePos();
+        } else if (e.keyCode == 38) {
+          direction = 'top';
+          topValue = topValue - 10;
+          regulatePos();
+        }
+        update();
+      };
+    </script>
+  </body>
+</html>

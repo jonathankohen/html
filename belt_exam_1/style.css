@@ -1,0 +1,204 @@
+/* DISPLAY */
+/* SIZING */
+/* TEXT FORMATTING */
+/* COLOR */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    background: #0e0e0e;
+}
+
+/* I can't tell if there are lines on the left and right of the container or not in the original image. When I open it in my browser there are, so I made these! */
+.lines {
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-image: linear-gradient(
+            to right,
+            rgba(26, 26, 26, 1) 0%,
+            rgba(0, 0, 0, 0)
+        )
+        1 100%;
+
+    border-right-width: 10px;
+    border-right-style: solid;
+    border-image: linear-gradient(
+            to right,
+            rgba(26, 26, 26, 1) 0%,
+            rgba(0, 0, 0, 0)
+        )
+        1 100%;
+}
+
+#container {
+    width: 80%;
+    height: 100vh;
+    margin: 0px auto;
+}
+
+#top header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 20px;
+
+    color: #cfcfcf;
+    background-color: #1a1a1a;
+}
+
+#menu {
+    background: linear-gradient(
+        180deg,
+        rgba(82, 82, 82, 1) 0%,
+        rgba(44, 44, 44, 1) 75%,
+        rgba(0, 0, 0, 1) 100%
+    );
+}
+
+#menu ul {
+    display: flex;
+
+    margin: 0px;
+    padding: 20px 40px;
+
+    list-style-type: none;
+}
+
+#menu a {
+    margin-right: 20px;
+
+    text-decoration: none;
+
+    color: #cfcfcf;
+}
+
+#main_pic {
+    display: block;
+    width: 100%;
+}
+
+.ico_section header {
+    margin-top: 10px;
+    padding: 0px;
+
+    font-size: 18px;
+
+    color: #ef7f2c;
+}
+
+.ico_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px;
+}
+
+.ico_section p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.ico_lorem {
+    color: #cfcfcf;
+
+    font-size: 14px;
+}
+
+.ico {
+    width: 60px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#buy_now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: black;
+}
+
+#buy_now h3 {
+    padding: 5px 0px;
+    color: white;
+}
+
+#buy_now p {
+    color: #cfcfcf;
+    width: 80%;
+}
+
+#buy_now a {
+    padding: 10px 20px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 168, 104, 1) 0%,
+        rgba(239, 127, 44, 1) 100%
+    );
+}
+
+#portfolio header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+
+    color: white;
+}
+
+#portfolio header p {
+    font-style: italic;
+    font-size: 14px;
+
+    color: #ef7f2c;
+}
+
+#bottom_four {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 25%;
+}
+
+.portfolio_pics {
+    border: 5px solid rgba(44, 44, 44, 1);
+}
+
+.portfolio_title {
+    margin: 10px;
+
+    color: #ef7f2c;
+}
+
+.portfolio_lorem {
+    margin: 10px;
+
+    width: 221px;
+
+    color: #cfcfcf;
+}
+
+#back {
+    font-size: 10px;
+    text-align: end;
+
+    margin: 20px 0px 0px 0px;
+
+    color: #7c7670;
+}

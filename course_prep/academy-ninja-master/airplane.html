@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Airplane</title>
+  </head>
+  <body>
+    <style type="text/css">
+      #ocean {
+        background-image: url('ocean.jpg');
+        width: 900px;
+        height: 700px;
+      }
+      .player {
+        position: absolute;
+        background-image: url('player.png');
+        width: 70px;
+        height: 75px;
+      }
+      .enemy {
+        position: absolute;
+        background-image: url('enemy.png');
+        width: 70px;
+        height: 75px;
+      }
+    </style>
+
+    <div id="ocean">
+      <div id="players">
+        <div class="player"></div>
+      </div>
+      <div id="enemies">
+        <div class="enemy"></div>
+      </div>
+    </div>
+
+    <script>
+      let player = {
+        left: 450,
+        top: 620
+      };
+
+      let enemies = [
+        { left: 450, top: 200 },
+        { left: 450, top: 250 }
+      ];
+
+      drawPlayer = () => {
+        content = '';
+        content = "<div class='player' style='left:100px; top: 100px;'></div>";
+      };
+    </script>
+  </body>
+</html>
